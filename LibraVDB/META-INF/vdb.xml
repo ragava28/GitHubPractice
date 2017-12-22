@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<vdb name="LibraVDB" version="1">
+    <description></description>
+    <property name="UseConnectionMetadata" value="true" />
+    <model name="PDMW_SM" type="PHYSICAL" visible="false">
+        <property name="importer.tableTypes" value="TABLE,VIEW" />
+        <property name="importer.useFullSchemaName" value="false" />
+		<property name="importer.importKeys" value="false" />
+        <property name="importer.schemaPattern" value="dbo" />
+        <property name="cache-metadata" value="true" />
+        <source translator-name="sqlserver" connection-jndi-name="java:/PDMWSrc" name="PDMWSrc" />			
+    </model>
+	<model name="PDMExt_SM" type="PHYSICAL" visible="false">
+        <property name="importer.tableTypes" value="TABLE,VIEW" />
+        <property name="importer.useFullSchemaName" value="false" />
+		<property name="importer.importKeys" value="false" />
+        <property name="importer.schemaPattern" value="dbo" />
+        <property name="cache-metadata" value="true" />
+        <source translator-name="sqlserver" connection-jndi-name="java:/PDMExtSrc" name="PDMExtSrc" />			
+    </model>
+    <model name="PDMW_VM" type="VIRTUAL" visible="true">
+        <property name="modelClass" value="Relational" />
+        <metadata type="DDL-FILE">/ddl/VM.ddl</metadata>
+    </model>
+</vdb>
