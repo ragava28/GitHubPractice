@@ -25,10 +25,3 @@ e.EQUIPMENT_NAME
 from PDMW_SM.DIMWELLCOMPLETION  wc, PDMW_SM.DIMZONE z,  PDMW_SM.DIMEQUIPMENT e
 where wc.DIM_WELLCOMPL_KEY= z.DIM_WELLCOMPL_KEY and z.DIM_ZONE_WELLCOMPL_KEY=e.DIM_ZONE_WELLCOMPL_KEY;
 
-
-<<<<<<< HEAD
-Ha this will give the clarity .
-=======
-Hello how are you raghu 
-
->>>>>>> 512d8404f063504b79e6a4d7c73d49296be220d0
